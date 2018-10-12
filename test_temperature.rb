@@ -6,6 +6,9 @@ class TestTemperature < MiniTest::Test
    # tests go in here
    def test_f_to_c
      # Not using the test_ naming convention means Minitest won't recognize it is a test
-     
+     expected_result = 10
+     actual_result = f_to_c(50)
+
+     assert_equal(expected_result, actual_result)
    end
 end
